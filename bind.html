@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<title> My first angular page </title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<body>
+		<!-- <div ng-app="">
+			<input type="name" placeholder="Enter your name" ng-model="name">
+			<p ng-bind="name"> </p>
+		</div> -->
+
+		<div ng-app="" ng-init="firstname='Vivek Lakshmanan'">
+			<p> Hello, {{firstname}} </p>
+			<p ng-bind="firstname"> </p>
+		</div>
+	</body>
+</html>
