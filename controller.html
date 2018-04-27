@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title> Controller Angular JS </title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<script>
+			var app = angular.module("myApp", []);
+			app.controller("myCtrl", function($scope) {
+				$scope.firstname = "Vivek"
+				$scope.lastname = "Lakshmanan"
+			});	
+		</script>
+	</head>
+	<body>
+		<div ng-app="myApp" ng-controller="myCtrl">
+			<h1> My Deatails</h1>
+			<p> Hello, <span> {{firstname + " " + lastname}}</span> </p>
+		</div>
+	</body>
+</html>

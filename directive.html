@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script>
+	var app = angular.module("myApp", []);
+	app.directive("drt", function() {
+		return {
+			template : "<h1> Hello, world from directive </h1>"
+		};
+	});
+</script>
+<body>
+	<div ng-app="myApp">
+		<drt> </drt>
+	</div>
+</body>
+</html>

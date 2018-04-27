@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<title> My first angular page </title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script>
+	var app = angular.module("myApp", []);
+	app.controller("myCtrl", function($scope) {
+		$scope.names = ["Vivek", "Rahul", "Pratap", "Teja", "Arun", "Avinash", "Karthik", "Deeraj"];
+	});
+</script>
+<body>
+	<div ng-app="myApp" ng-controller="myCtrl">
+		<input type="text" ng-model="data"/>
+		<li ng-repeat="x in names | filter: data | orderBy: x"> {{x}} </li>
+	</div>
+</body>
+</html>
